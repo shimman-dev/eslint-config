@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:sonarjs/recommended",
+    "eslint-config-prettier"
+  ]
+}
