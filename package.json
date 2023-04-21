@@ -48,6 +48,6 @@
   },
   "homepage": "https://github.com/shimman-dev/eslint-config-shimman#readme",
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
