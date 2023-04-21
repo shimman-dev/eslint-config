@@ -1,0 +1,17 @@
+{
+  "plugins": ["import", "vitest", "sonarjs"],
+  "overrides": [
+    {
+      "files": "*.(js|jsx)",
+      "extends": ["./javascript.json"]
+    },
+    {
+      "files": "*.(ts|tsx)",
+      "extends": ["./typescript.json"]
+    },
+    {
+      "files": "*.test.@(js|jsx|ts|tsx)",
+      "extends": ["./vitest.json"]
+    }
+  ]
+}
