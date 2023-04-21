@@ -2,20 +2,22 @@
 
 Config used in shimman-dev projects.
 
-## Installing
-
-1. In your project folder, run:
-
-```
-npm i -D @shimman-dev/eslint-config-shimman
-```
-
-2. Adding to you eslint config:
+## Install
 
 ```js
 {
   'extends': [
-    'shimman'
+    '@shimman-dev/eslint-config'
+  ]
+}
+```
+
+### presets
+
+```js
+{
+  'extends': [
+    '@shimman-dev/eslint-config/react'
   ]
 }
 ```
