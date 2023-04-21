@@ -1,12 +1,12 @@
 {
-  "name": "eslint-config-shimman",
+  "name": "@shimman-dev/eslint-config-shimman",
   "engines": {
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
   },
   "version": "0.0.0-development",
   "description": "eslint config for shimman projects",
-  "main": "index.js",
+  "main": "index.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
@@ -17,12 +17,16 @@
     "husky": "^8.0.3",
     "semantic-release": "^21.0.1"
   },
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shimman-dev/eslint-config-shimman.git"
   },
   "keywords": [
     "eslint",
+    "eslintconfig",
     "javascript",
     "typescript"
   ],
