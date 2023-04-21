@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-shimman",
+  "engines": {
+    "node": ">=18.12.1",
+    "npm": ">=8.19.2"
+  },
+  "version": "0.0.0-development",
+  "description": "eslint config for shimman projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "husky": "^8.0.3",
+    "semantic-release": "^21.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimman-dev/eslint-config-shimman.git"
+  },
+  "keywords": [
+    "eslint",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Shimman (https://shimman.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shimman-dev/eslint-config-shimman/issues"
+  },
+  "homepage": "https://github.com/shimman-dev/eslint-config-shimman#readme",
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
