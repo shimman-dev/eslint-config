@@ -1,5 +1,5 @@
 {
-  "name": "@shimman-dev/eslint-config-shimman",
+  "name": "@shimman-dev/eslint-config",
   "engines": {
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shimman-dev/eslint-config-shimman.git"
+    "url": "git+https://github.com/shimman-dev/eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -44,9 +44,9 @@
   "author": "Shimman (https://shimman.dev/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shimman-dev/eslint-config-shimman/issues"
+    "url": "https://github.com/shimman-dev/eslint-config/issues"
   },
-  "homepage": "https://github.com/shimman-dev/eslint-config-shimman#readme",
+  "homepage": "https://github.com/shimman-dev/eslint-config#readme",
   "publishConfig": {
     "access": "public"
   }
