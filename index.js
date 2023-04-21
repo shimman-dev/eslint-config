@@ -2,11 +2,11 @@ module.exports = {
   plugins: ["import", "vitest", "sonarjs"],
   overrides: [
     {
-      files: "*.(js|jsx)",
+      files: "*.(js)",
       extends: ["./javascript.js"],
     },
     {
-      files: "*.(ts|tsx)",
+      files: "*.(ts)",
       extends: ["./typescript.js"],
     },
     {
@@ -14,4 +14,7 @@ module.exports = {
       extends: ["./vitest.js"],
     },
   ],
+  rules: {
+    "eslint-no-undef": "off",
+  },
 };
