@@ -26,7 +26,7 @@ module.exports = {
         sourceType: "module",
       },
       extends: [...extendDeps],
-      plugins: [...plugins],
+      plugins: [...pluginDeps],
       rules: {
         "eslint-no-undef": 0,
         "eslint-no-shadow": 0,
