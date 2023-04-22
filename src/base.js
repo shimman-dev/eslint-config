@@ -2,13 +2,7 @@
  * Custom config base for all projects.
  */
 
-const plugins = [
-  "eslint-config-prettier",
-  "import",
-  "promise",
-  "sonarjs",
-  "unicorn",
-];
+const plugins = ["import", "promise", "sonarjs", "unicorn"];
 
 module.exports = {
   env: {
@@ -22,6 +16,7 @@ module.exports = {
     "plugin:promise/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
+    "prettier",
   ],
   overrides: [
     {
