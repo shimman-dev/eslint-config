@@ -1,15 +1,4 @@
-"use strict";
+const { typescript } = require("./src");
 
-const configTS = require("./configs/typescript.js");
-const configReact = require("./configs/react.js");
-
-module.exports = {
-  configs: {
-    typescript: Object.assign({}, configTS, {
-      plugins,
-    }),
-    react: Object.assign({}, configReact, {
-      plugins,
-    }),
-  },
-};
+// Export typescript as default configuration
+module.exports = typescript;
