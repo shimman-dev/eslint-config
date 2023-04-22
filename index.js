@@ -1,20 +1,17 @@
+"use strict";
+
+const configTS = require("./configs/typescript.js");
+const configReact = require("./configs/react.js");
+
 module.exports = {
-  plugins: ["import", "vitest", "sonarjs"],
-  overrides: [
-    {
-      files: "*.(js)",
-      extends: ["./javascript.js"],
-    },
-    {
-      files: "*.(ts)",
-      extends: ["./typescript.js"],
-    },
-    {
-      files: "*.test.@(js|jsx|ts|tsx)",
-      extends: ["./vitest.js"],
-    },
-  ],
-  rules: {
-    "eslint-no-undef": "off",
+  configs: {
+    typescript: Object.assign({}, configTS, {
+      parserOptions: configAll.languageOptions.parserOptions,
+      plugins,
+    }),
+    react: Object.assign({}, configReact, {
+      parserOptions: configRuntime.languageOptions.parserOptions,
+      plugins,
+    }),
   },
 };
