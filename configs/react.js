@@ -1,19 +1,32 @@
 "use strict";
 
 const plugins = [
-  "import",
   "@typescript-eslint",
-  "sonarjs",
+  "eslint-config-prettier",
   "html",
+  "import",
   "jsx-a11y",
+  "promise",
   "react",
   "react-hooks",
-  "eslint-config-prettier",
+  "sonarjs",
+  "unicorn",
 ];
 
 module.exports = Object.assign(
   {},
   {
+    env: {
+      browser: true,
+      es2022: true,
+    },
+    parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      ecmaFeatures: {
+        jsx: true,
+      },
+    },
     globals: {
       React: true,
       JSX: true,
@@ -27,6 +40,9 @@ module.exports = Object.assign(
       "plugin:testing-library/react",
       "plugin:react/recommended",
       "plugin:react-hooks/recommended",
+      "plugin:promise/recommended",
+      "plugin:unicorn/recommended",
+      "plugin:vitest-globals/recommended",
     ],
     plugins: [...plugins],
     settings: {
@@ -40,16 +56,12 @@ module.exports = Object.assign(
       "eslint-no-undef": 0,
       "eslint-no-shadow": 0,
     },
-    languageOptions: {
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
     overrides: [
       {
         files: "*.test.@(ts|tsx)",
+        env: {
+          "vitest-globals": true,
+        },
         plugins: [...plugins, "vitest"],
       },
     ],
