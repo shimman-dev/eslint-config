@@ -16,8 +16,10 @@ module.exports = {
     "plugin:promise/recommended",
     "plugin:sonarjs/recommended",
     "plugin:unicorn/recommended",
-    "prettier",
   ],
+  rules: {
+    "unicorn/prevent-abbreviations": 0,
+  },
   overrides: [
     {
       /**

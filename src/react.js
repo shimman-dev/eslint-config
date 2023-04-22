@@ -44,6 +44,7 @@ module.exports = {
         "plugin:testing-library/react",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
+        "eslint-config-prettier",
       ],
       plugins: [...plugins],
       rules: {

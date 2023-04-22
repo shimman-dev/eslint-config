@@ -7,6 +7,11 @@ module.exports = {
   overrides: [
     {
       files: "*.ts",
+      env: {
+        node: true,
+        browser: false,
+        es2022: true,
+      },
       parser: "@typescript-eslint/parser",
       parserOptions: {
         ecmaVersion: "latest",
@@ -17,6 +22,7 @@ module.exports = {
         "airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript",
+        "eslint-config-prettier",
       ],
       plugins: [...plugins],
       rules: {
