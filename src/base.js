@@ -19,10 +19,6 @@ module.exports = {
   },
   extends: [...extendDeps],
   plugins: [...pluginDeps],
-  rules: {
-    "unicorn/prevent-abbreviations": "off",
-    "import/prefer-default-export": "off",
-  },
   overrides: [
     {
       /**

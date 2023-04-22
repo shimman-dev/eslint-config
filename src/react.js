@@ -1,8 +1,8 @@
 "use strict";
 
 const extendDeps = [
-  // "airbnb",
-  // "airbnb/hooks",
+  "airbnb",
+  "airbnb/hooks",
   "airbnb-typescript",
   "plugin:@typescript-eslint/recommended",
   "plugin:import/typescript",
@@ -53,17 +53,25 @@ module.exports = {
         "react/react-in-jsx-scope": "off",
         "eslint-no-undef": "off",
         "eslint-no-shadow": "off",
+        "import/prefer-default-export": "off",
+        "unicorn/prevent-abbreviations": "off",
+        "unicorn/filename-case": [
+          "error",
+          {
+            cases: {
+              camelCase: true,
+              pascalCase: true,
+            },
+          },
+        ],
       },
     },
     {
       files: "*.test.@(ts|tsx)",
-      extends: [
-        ...extendDeps,
-        "plugin:vitest/recommended",
-        "plugin:testing-library/react",
-      ],
-      plugins: [...extendDeps, "vitest"],
-      rules: { "react/jsx-props-no-spreading": "off" },
+      rules: {
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+      },
     },
   ],
 };

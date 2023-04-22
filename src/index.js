@@ -1,5 +1,6 @@
 module.exports = {
-  base: require("./base"),
-  react: require("./react"),
-  typescript: require("./typescript"),
+  base: require("./base.js"),
+  react: require("./react.js"),
+  typescript: require("./typescript.js"),
+  vitest: require("./vitest.js"),
 };

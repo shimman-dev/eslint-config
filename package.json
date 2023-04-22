@@ -4,14 +4,15 @@
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
   },
-  "version": "0.0.92",
+  "version": "0.0.95",
   "description": "eslint config for shimman projects",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
     "./base": "./src/base.js",
     "./react": "./src/react.js",
-    "./typescript": "./src/typescript.js"
+    "./typescript": "./src/typescript.js",
+    "./vitest": "./src/vitest.js"
   },
   "scripts": {
     "semantic-release": "semantic-release",
