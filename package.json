@@ -1,11 +1,11 @@
 {
-  "name": "@shimman-dev/eslint-config",
+  "name": "@shimman-dev/eslint-plugin",
   "engines": {
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
   },
   "version": "0.0.65",
-  "description": "eslint config for shimman projects",
+  "description": "eslint plugin for shimman projects",
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release",
@@ -40,20 +40,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shimman-dev/eslint-config.git"
+    "url": "git+https://github.com/shimman-dev/eslint-plugin.git"
   },
   "keywords": [
     "eslint",
-    "eslintconfig",
+    "eslintplugin",
     "javascript",
     "typescript"
   ],
   "author": "Shimman (https://shimman.dev/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shimman-dev/eslint-config/issues"
+    "url": "https://github.com/shimman-dev/eslint-plugin/issues"
   },
-  "homepage": "https://github.com/shimman-dev/eslint-config#readme",
+  "homepage": "https://github.com/shimman-dev/eslint-plugin#readme",
   "publishConfig": {
     "access": "public"
   }
