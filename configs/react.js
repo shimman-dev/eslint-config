@@ -34,6 +34,7 @@ module.exports = Object.assign(
     extends: [
       "eslint:recommended",
       "airbnb",
+      "airbnb/hooks",
       "airbnb-typescript",
       "plugin:@typescript-eslint/recommended",
       "plugin:sonarjs/recommended",

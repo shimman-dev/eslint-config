@@ -4,20 +4,138 @@ Config used in shimman-dev projects.
 
 ## Install
 
-```js
-{
-  'extends': [
-    '@shimman-dev/eslint-config'
-  ]
-}
+Be sure to install the correct versions of each peer dependency, which is given
+by the following command:
+
+```shell
+npm info "@shimman-dev/eslint-config@latest" peerDependencies
 ```
 
-### presets
+If you are using `npm` with a version greater than 5 (`node version 8+`) you can
+run the following command:
+
+```shell
+npx install-peerdeps --dev @shimman-dev/eslint-config
+```
+
+Alternatively you can use these commands for the following presets:
+
+- For `@shimman-dev/eslint-config/typescript`
+
+```shell
+npm install @typescript-eslint/eslint-plugin \
+	    eslint-config-airbnb-base \
+	    eslint-config-airbnb-typescript \
+	    eslint-config-prettier \
+	    eslint-plugin-import \
+	    eslint-plugin-jsdoc \
+	    eslint-plugin-promise \
+	    eslint-plugin-sonarjs \
+	    eslint-plugin-unicorn \
+	    eslint-plugin-vitest \
+	    eslint-plugin-vitest-globals \
+	    --save-dev
+```
+
+```shell
+yarn add @typescript-eslint/eslint-plugin \
+	 eslint-config-airbnb-base \
+	 eslint-config-airbnb-typescript \
+	 eslint-config-prettier \
+	 eslint-plugin-import \
+	 eslint-plugin-jsdoc \
+	 eslint-plugin-promise \
+	 eslint-plugin-sonarjs \
+	 eslint-plugin-unicorn \
+	 eslint-plugin-vitest \
+	 eslint-plugin-vitest-globals \
+	 --dev
+```
+
+```shell
+pnpm add @typescript-eslint/eslint-plugin \
+	 eslint-config-airbnb-base \
+	 eslint-config-airbnb-typescript \
+	 eslint-config-prettier \
+	 eslint-plugin-import \
+	 eslint-plugin-jsdoc \
+	 eslint-plugin-promise \
+	 eslint-plugin-sonarjs \
+	 eslint-plugin-unicorn \
+	 eslint-plugin-vitest \
+	 eslint-plugin-vitest-globals \
+	 --save-dev
+```
+
+- For `@shimman-dev/eslint-config/react`
+
+```shell
+npm install @typescript-eslint/eslint-plugin \
+	    eslint-config-airbnb-base \
+	    eslint-config-airbnb-typescript \
+	    eslint-config-prettier \
+	    eslint-plugin-html \
+	    eslint-plugin-import \
+	    eslint-plugin-jsdoc \
+	    eslint-plugin-jsx-a11y \
+	    eslint-plugin-promise \
+	    eslint-plugin-react \
+	    eslint-plugin-react-hooks \
+	    eslint-plugin-sonarjs \
+	    eslint-plugin-testing-library \
+	    eslint-plugin-unicorn \
+	    eslint-plugin-vitest \
+	    eslint-plugin-vitest-globals \
+	    --save-dev
+```
+
+```shell
+yarn add @typescript-eslint/eslint-plugin \
+	eslint-config-airbnb-base \
+	eslint-config-airbnb-typescript \
+	eslint-config-prettier \
+	eslint-plugin-html \
+	eslint-plugin-import \
+	eslint-plugin-jsdoc \
+	eslint-plugin-jsx-a11y \
+	eslint-plugin-promise \
+	eslint-plugin-react \
+	eslint-plugin-react-hooks \
+	eslint-plugin-sonarjs \
+	eslint-plugin-testing-library \
+	eslint-plugin-unicorn \
+	eslint-plugin-vitest \
+	eslint-plugin-vitest-globals \
+	--dev
+```
+
+```shell
+pnpm add @typescript-eslint/eslint-plugin \
+	 eslint-config-airbnb-base \
+	 eslint-config-airbnb-typescript \
+	 eslint-config-prettier \
+	 eslint-plugin-html \
+	 eslint-plugin-import \
+	 eslint-plugin-jsdoc \
+	 eslint-plugin-jsx-a11y \
+	 eslint-plugin-promise \
+	 eslint-plugin-react \
+	 eslint-plugin-react-hooks \
+	 eslint-plugin-sonarjs \
+	 eslint-plugin-testing-library \
+	 eslint-plugin-unicorn \
+	 eslint-plugin-vitest \
+	 eslint-plugin-vitest-globals \
+	 --save-dev
+```
 
 ```js
 {
   'extends': [
+    // to use strictly react preset
     '@shimman-dev/eslint-config/react'
+    // or to use typescript preset (for nonbrowser work)
+    '@shimman-dev/eslint-config/
   ]
 }
 ```
