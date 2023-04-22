@@ -4,7 +4,7 @@
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
   },
-  "version": "0.0.75",
+  "version": "0.0.77",
   "description": "eslint config for shimman projects",
   "main": "index.js",
   "scripts": {
