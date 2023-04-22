@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     "unicorn/prevent-abbreviations": 0,
+    "import/prefer-default-export": 0,
   },
   overrides: [
     {

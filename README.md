@@ -71,7 +71,7 @@ pnpm add @typescript-eslint/eslint-plugin \
 
 ```shell
 npm install @typescript-eslint/eslint-plugin \
-	    eslint-config-airbnb-base \
+	    eslint-config-airbnb \
 	    eslint-config-airbnb-typescript \
 	    eslint-config-prettier \
 	    eslint-plugin-html \
@@ -91,7 +91,7 @@ npm install @typescript-eslint/eslint-plugin \
 
 ```shell
 yarn add @typescript-eslint/eslint-plugin \
-	eslint-config-airbnb-base \
+	eslint-config-airbnb \
 	eslint-config-airbnb-typescript \
 	eslint-config-prettier \
 	eslint-plugin-html \
@@ -111,7 +111,7 @@ yarn add @typescript-eslint/eslint-plugin \
 
 ```shell
 pnpm add @typescript-eslint/eslint-plugin \
-	 eslint-config-airbnb-base \
+	 eslint-config-airbnb \
 	 eslint-config-airbnb-typescript \
 	 eslint-config-prettier \
 	 eslint-plugin-html \
@@ -135,7 +135,7 @@ pnpm add @typescript-eslint/eslint-plugin \
     // to use strictly react preset
     '@shimman-dev/eslint-config/react'
     // or to use typescript preset (for nonbrowser work)
-    '@shimman-dev/eslint-config/
+    '@shimman-dev/eslint-config/typescript'
   ]
 }
 ```
