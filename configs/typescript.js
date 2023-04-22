@@ -1,23 +1,36 @@
 "use strict";
 
 const plugins = [
-  "import",
   "@typescript-eslint",
-  "sonarjs",
   "eslint-config-prettier",
+  "import",
+  "promise",
+  "sonarjs",
+  "unicorn",
 ];
 
 module.exports = Object.assign(
   {},
   {
+    env: {
+      browser: false,
+      es2022: true,
+    },
+    parserOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
     extends: [
       "eslint:recommended",
       "airbnb-base",
       "airbnb-typescript/base",
       "plugin:@typescript-eslint/recommended",
       "plugin:sonarjs/recommended",
+      "plugin:promise/recommended",
+      "plugin:unicorn/recommended",
+      "plugin:vitest-globals/recommended",
     ],
-    plugins: [],
+    plugins: [...plugins],
     rules: {
       "eslint-no-undef": 0,
       "eslint-no-shadow": 0,
@@ -25,6 +38,9 @@ module.exports = Object.assign(
     overrides: [
       {
         files: "*.test.@(ts)",
+        env: {
+          "vitest-globals": true,
+        },
         plugins: [...plugins, "vitest"],
       },
     ],
