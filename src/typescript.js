@@ -17,7 +17,6 @@ module.exports = {
         "airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript",
-        "plugin:vitest-globals/recommended",
       ],
       plugins: [...plugins],
       rules: {
@@ -27,9 +26,8 @@ module.exports = {
     },
     {
       files: "*.test.@(ts)",
-      env: {
-        "vitest-globals": true,
-      },
+      extends: ["plugin:vitest/recommended"],
+
       plugins: [...plugins, "vitest"],
     },
   ],

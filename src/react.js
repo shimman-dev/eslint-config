@@ -44,7 +44,6 @@ module.exports = {
         "plugin:testing-library/react",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
-        "plugin:vitest-globals/recommended",
       ],
       plugins: [...plugins],
       rules: {
@@ -56,9 +55,7 @@ module.exports = {
     },
     {
       files: "*.test.@(ts|tsx)",
-      env: {
-        "vitest-globals": true,
-      },
+      extends: ["plugin:vitest/recommended"],
       plugins: [...plugins, "vitest"],
       rules: { "react/jsx-props-no-spreading": 0 },
     },
