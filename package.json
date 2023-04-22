@@ -1,11 +1,11 @@
 {
-  "name": "@shimman-dev/eslint-plugin",
+  "name": "@shimman-dev/eslint-config",
   "engines": {
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
   },
-  "version": "0.0.65",
-  "description": "eslint plugin for shimman projects",
+  "version": "0.0.71",
+  "description": "eslint config for shimman projects",
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release",
@@ -13,8 +13,31 @@
     "publish:beta": "npm publish --tag beta"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^5.59.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
-    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^43.0.7",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-testing-library": "^5.10.3",
+    "eslint-plugin-vitest": "^0.1.4",
+    "husky": "^8.0.3",
+    "semantic-release": "^21.0.1"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "eslint": ">=8",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsdoc": "^43.0.7",
@@ -25,35 +48,22 @@
     "eslint-plugin-testing-library": "^5.10.3",
     "eslint-plugin-vitest": "^0.1.4"
   },
-  "devDependencies": {
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1",
-    "eslint": "^8.38.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "husky": "^8.0.3",
-    "semantic-release": "^21.0.1"
-  },
-  "peerDependencies": {
-    "eslint": ">=8"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shimman-dev/eslint-plugin.git"
+    "url": "git+https://github.com/shimman-dev/eslint-config.git"
   },
   "keywords": [
     "eslint",
-    "eslintplugin",
+    "eslintconfig",
     "javascript",
     "typescript"
   ],
   "author": "Shimman (https://shimman.dev/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shimman-dev/eslint-plugin/issues"
+    "url": "https://github.com/shimman-dev/eslint-config/issues"
   },
-  "homepage": "https://github.com/shimman-dev/eslint-plugin#readme",
+  "homepage": "https://github.com/shimman-dev/eslint-config#readme",
   "publishConfig": {
     "access": "public"
   }
