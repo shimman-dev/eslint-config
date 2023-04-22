@@ -2,7 +2,7 @@
 
 const extendDeps = [
   // "airbnb",
-  "airbnb/hooks",
+  // "airbnb/hooks",
   "airbnb-typescript",
   "plugin:@typescript-eslint/recommended",
   "plugin:import/typescript",
