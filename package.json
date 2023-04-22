@@ -4,7 +4,7 @@
     "node": ">=18.12.1",
     "npm": ">=8.19.2"
   },
-  "version": "0.0.89",
+  "version": "0.0.90",
   "description": "eslint config for shimman projects",
   "main": "index.js",
   "exports": {
@@ -45,23 +45,23 @@
     "semantic-release": "^21.0.1"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/eslint-plugin": ">=5",
     "eslint": ">=8",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsdoc": "^43.0.7",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sonarjs": "^0.19.0",
-    "eslint-plugin-testing-library": "^5.10.3",
-    "eslint-plugin-unicorn": "^46.0.0",
-    "eslint-plugin-vitest": "^0.1.4"
+    "eslint-config-airbnb": ">=19",
+    "eslint-config-airbnb-base": ">=15",
+    "eslint-config-airbnb-typescript": ">=17",
+    "eslint-config-prettier": ">=8",
+    "eslint-plugin-html": ">=7",
+    "eslint-plugin-import": ">=2",
+    "eslint-plugin-jsdoc": ">=43",
+    "eslint-plugin-jsx-a11y": ">=6",
+    "eslint-plugin-promise": ">=6",
+    "eslint-plugin-react": ">=7",
+    "eslint-plugin-react-hooks": ">=4",
+    "eslint-plugin-sonarjs": ">=0.19.0",
+    "eslint-plugin-testing-library": ">=5",
+    "eslint-plugin-unicorn": ">=46",
+    "eslint-plugin-vitest": ">=0.1.0"
   },
   "repository": {
     "type": "git",
@@ -71,7 +71,8 @@
     "eslint",
     "eslintconfig",
     "javascript",
-    "typescript"
+    "typescript",
+    "react"
   ],
   "author": "Shimman (https://shimman.dev/)",
   "license": "MIT",
