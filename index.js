@@ -1,6 +1,6 @@
-const { base, typescript, react } = require("./src");
-
-// Export typescript as default configuration
 module.exports = {
-  extends: [base, typescript, react].map((path) => require.resolve(path)),
+  extends: ["./src/typescript", "./src/react", "./src/base"].map(
+    require.resolve
+  ),
+  rules: {},
 };
