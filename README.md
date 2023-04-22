@@ -33,7 +33,6 @@ npm install @typescript-eslint/eslint-plugin \
 	    eslint-plugin-sonarjs \
 	    eslint-plugin-unicorn \
 	    eslint-plugin-vitest \
-	    eslint-plugin-vitest-globals \
 	    --save-dev
 ```
 
@@ -51,7 +50,6 @@ yarn add @typescript-eslint/eslint-plugin \
 	 eslint-plugin-sonarjs \
 	 eslint-plugin-unicorn \
 	 eslint-plugin-vitest \
-	 eslint-plugin-vitest-globals \
 	 --dev
 ```
 
@@ -66,9 +64,9 @@ pnpm add @typescript-eslint/eslint-plugin \
 	 eslint-plugin-sonarjs \
 	 eslint-plugin-unicorn \
 	 eslint-plugin-vitest \
-	 eslint-plugin-vitest-globals \
 	 --save-dev
 ```
+
 </details>
 
 - For `@shimman-dev/eslint-config/react`
@@ -89,7 +87,6 @@ npm install @typescript-eslint/eslint-plugin \
 	    eslint-plugin-testing-library \
 	    eslint-plugin-unicorn \
 	    eslint-plugin-vitest \
-	    eslint-plugin-vitest-globals \
 	    --save-dev
 ```
 
@@ -112,7 +109,6 @@ yarn add @typescript-eslint/eslint-plugin \
 	eslint-plugin-testing-library \
 	eslint-plugin-unicorn \
 	eslint-plugin-vitest \
-	eslint-plugin-vitest-globals \
 	--dev
 ```
 
@@ -132,9 +128,9 @@ pnpm add @typescript-eslint/eslint-plugin \
 	 eslint-plugin-testing-library \
 	 eslint-plugin-unicorn \
 	 eslint-plugin-vitest \
-	 eslint-plugin-vitest-globals \
 	 --save-dev
 ```
+
 </details>
 
 ```js
