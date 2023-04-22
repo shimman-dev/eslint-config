@@ -37,6 +37,9 @@ npm install @typescript-eslint/eslint-plugin \
 	    --save-dev
 ```
 
+<details>
+  <summary>Expand for other options (yarn, pnpm)</summary>
+  
 ```shell
 yarn add @typescript-eslint/eslint-plugin \
 	 eslint-config-airbnb-base \
@@ -66,6 +69,7 @@ pnpm add @typescript-eslint/eslint-plugin \
 	 eslint-plugin-vitest-globals \
 	 --save-dev
 ```
+</details>
 
 - For `@shimman-dev/eslint-config/react`
 
@@ -88,6 +92,9 @@ npm install @typescript-eslint/eslint-plugin \
 	    eslint-plugin-vitest-globals \
 	    --save-dev
 ```
+
+<details>
+  <summary>Expand for other options (yarn, pnpm)</summary>
 
 ```shell
 yarn add @typescript-eslint/eslint-plugin \
@@ -128,6 +135,7 @@ pnpm add @typescript-eslint/eslint-plugin \
 	 eslint-plugin-vitest-globals \
 	 --save-dev
 ```
+</details>
 
 ```js
 {
