@@ -20,8 +20,8 @@ module.exports = {
   extends: [...extendDeps],
   plugins: [...pluginDeps],
   rules: {
-    "unicorn/prevent-abbreviations": 0,
-    "import/prefer-default-export": 0,
+    "unicorn/prevent-abbreviations": "off",
+    "import/prefer-default-export": "off",
   },
   overrides: [
     {
@@ -35,6 +35,9 @@ module.exports = {
         "**/.eslintrc.cjs",
         "**/.stylelintrc.js",
       ],
+      rules: {
+        "unicorn/prefer-module": "off",
+      },
     },
   ],
 };

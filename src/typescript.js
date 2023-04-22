@@ -28,8 +28,8 @@ module.exports = {
       extends: [...extendDeps],
       plugins: [...pluginDeps],
       rules: {
-        "eslint-no-undef": 0,
-        "eslint-no-shadow": 0,
+        "eslint-no-undef": "off",
+        "eslint-no-shadow": "off",
       },
     },
     {
