@@ -2,21 +2,23 @@
  * Custom config base for all projects.
  */
 
-const plugins = ["import", "promise", "sonarjs", "unicorn"];
+const extendDeps = [
+  "eslint:recommended",
+  "plugin:import/recommended",
+  "plugin:promise/recommended",
+  "plugin:sonarjs/recommended",
+  "plugin:unicorn/recommended",
+];
+
+const pluginDeps = ["import", "promise", "sonarjs", "unicorn"];
 
 module.exports = {
   env: {
     node: true,
     es2022: true,
   },
-  plugins: [...plugins],
-  extends: [
-    "eslint:recommended",
-    "plugin:import/recommended",
-    "plugin:promise/recommended",
-    "plugin:sonarjs/recommended",
-    "plugin:unicorn/recommended",
-  ],
+  extends: [...extendDeps],
+  plugins: [...pluginDeps],
   rules: {
     "unicorn/prevent-abbreviations": 0,
     "import/prefer-default-export": 0,

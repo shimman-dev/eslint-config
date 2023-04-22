@@ -1,6 +1,14 @@
 "use strict";
 
-const plugins = ["@typescript-eslint"];
+const extendDeps = [
+  "airbnb-base",
+  "airbnb-typescript/base",
+  "plugin:@typescript-eslint/recommended",
+  "plugin:import/typescript",
+  "eslint-config-prettier",
+];
+
+const pluginDeps = ["@typescript-eslint"];
 
 module.exports = {
   extends: require.resolve("./base.js"),
@@ -17,13 +25,7 @@ module.exports = {
         ecmaVersion: "latest",
         sourceType: "module",
       },
-      extends: [
-        "airbnb-base",
-        "airbnb-typescript/base",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:import/typescript",
-        "eslint-config-prettier",
-      ],
+      extends: [...extendDeps],
       plugins: [...plugins],
       rules: {
         "eslint-no-undef": 0,
@@ -32,9 +34,9 @@ module.exports = {
     },
     {
       files: "*.test.@(ts)",
-      extends: ["plugin:vitest/recommended"],
+      extends: [...extendDeps, "plugin:vitest/recommended"],
 
-      plugins: [...plugins, "vitest"],
+      plugins: [...pluginDeps, "vitest"],
     },
   ],
 };
