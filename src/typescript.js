@@ -14,17 +14,6 @@ module.exports = {
   extends: require.resolve("./base.js"),
   overrides: [
     {
-      files: "*.ts",
-      env: {
-        node: true,
-        browser: false,
-        es2022: true,
-      },
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-      },
       extends: [...extendDeps],
       plugins: [...pluginDeps],
       rules: {
@@ -32,22 +21,8 @@ module.exports = {
         "eslint-no-shadow": "off",
         "import/prefer-default-export": "off",
         "unicorn/prevent-abbreviations": "off",
-        "unicorn/filename-case": [
-          "error",
-          {
-            cases: {
-              camelCase: true,
-              pascalCase: true,
-            },
-          },
-        ],
+        "unicorn/filename-case": "off",
       },
-    },
-    {
-      files: "*.test.@(ts)",
-      extends: [...extendDeps, "plugin:vitest/recommended"],
-
-      plugins: [...pluginDeps, "vitest"],
     },
   ],
 };

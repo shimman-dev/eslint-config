@@ -13,10 +13,6 @@ const extendDeps = [
 const pluginDeps = ["import", "promise", "sonarjs", "unicorn"];
 
 module.exports = {
-  env: {
-    node: true,
-    es2022: true,
-  },
   extends: [...extendDeps],
   plugins: [...pluginDeps],
   overrides: [
