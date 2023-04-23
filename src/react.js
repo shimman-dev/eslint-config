@@ -2,7 +2,6 @@
 
 const extendDeps = [
   "airbnb",
-  "airbnb/hooks",
   "airbnb-typescript",
   "plugin:@typescript-eslint/recommended",
   "plugin:import/typescript",
@@ -21,31 +20,9 @@ const pluginDeps = [
 
 module.exports = {
   extends: require.resolve("./base.js"),
-  settings: {
-    react: {
-      version: "detect",
-    },
-  },
   overrides: [
     {
       files: "*.(ts|tsx)",
-      env: {
-        node: false,
-        browser: true,
-        es2022: true,
-      },
-      globals: {
-        React: true,
-        JSX: true,
-      },
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
       extends: [...extendDeps],
       plugins: [...pluginDeps],
       rules: {
@@ -55,15 +32,7 @@ module.exports = {
         "eslint-no-shadow": "off",
         "import/prefer-default-export": "off",
         "unicorn/prevent-abbreviations": "off",
-        "unicorn/filename-case": [
-          "error",
-          {
-            cases: {
-              camelCase: true,
-              pascalCase: true,
-            },
-          },
-        ],
+        "unicorn/filename-case": "off",
       },
     },
     {

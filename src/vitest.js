@@ -6,7 +6,7 @@ module.exports = {
     {
       files: "*.test.@(ts|tsx)",
       extends: ["plugin:vitest/recommended", "plugin:testing-library/react"],
-      plugins: ["vitest"],
+      plugins: ["vitest", "testing-library"],
     },
   ],
 };
