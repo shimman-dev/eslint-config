@@ -3,7 +3,7 @@ module.exports = {
     "./src/typescript.js",
     "./src/react.js",
     "./src/base.js",
-    "./src/vitest.js",
+    "./src/test.js",
   ].map(require.resolve),
   rules: {},
 };
