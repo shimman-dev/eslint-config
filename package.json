@@ -12,7 +12,7 @@
     "./base": "./src/base.js",
     "./react": "./src/react.js",
     "./typescript": "./src/typescript.js",
-    "./vitest": "./src/vitest.js"
+    "./test": "./src/test.js"
   },
   "scripts": {
     "semantic-release": "semantic-release",
