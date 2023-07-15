@@ -4,17 +4,20 @@
 
 const extendDeps = [
   "eslint:recommended",
+  "eslint-config-prettier",
   "plugin:import/recommended",
   "plugin:promise/recommended",
   "plugin:sonarjs/recommended",
   "plugin:unicorn/recommended",
 ];
 
-const pluginDeps = ["import", "promise", "sonarjs", "unicorn"];
-
 module.exports = {
   extends: [...extendDeps],
-  plugins: [...pluginDeps],
+  rules: {
+    "import/extensions": "off",
+    "unicorn/filename-case": "off",
+    "import/prefer-default-export": "off",
+  },
   overrides: [
     {
       /**
