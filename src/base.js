@@ -14,9 +14,13 @@ const extendDeps = [
 module.exports = {
   extends: [...extendDeps],
   rules: {
+    "no-unused-vars": "off",
     "import/extensions": "off",
-    "unicorn/filename-case": "off",
+    "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/no-empty-file": "off",
+    "unicorn/prevent-abbreviations": "off",
   },
   overrides: [
     {
