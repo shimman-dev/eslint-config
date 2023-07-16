@@ -19,14 +19,18 @@ module.exports = {
     },
   },
   rules: {
+    "arrow-body-style": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
     "react/no-unescaped-entities": "off",
     "react/react-in-jsx-scope": "off",
   },
   overrides: [
     {
-      files: ["*.test.tsx"],
+      files: ["*.tsx"],
       rules: {
-        "react/jsx-props-no-spreading": "off",
+        "unicorn/prefer-query-selector": "off",
       },
     },
   ],
