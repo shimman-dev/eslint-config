@@ -81,5 +81,7 @@ eslint-plugin-vitest
 
 </details>
 
+## Todos
+
 - [x] create portable config
 - [ ] explain reasoning for each plugin
