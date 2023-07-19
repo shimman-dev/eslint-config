@@ -9,4 +9,7 @@ const extendDeps = [
 
 module.exports = {
   extends: ["./base", ...extendDeps],
+  rules: {
+    "eslint-no-undef": "off",
+  },
 };
