@@ -1,8 +1,7 @@
 # eslint config
-
-[Inherit, whatever you want](https://www.youtube.com/watch?v=3h8Nchqs95w#t=5s)
-
 [![npm version](https://badge.fury.io/js/@shimman-dev%2Feslint-config.svg)](https://badge.fury.io/js/@shimman-dev%2Feslint-config)
+
+[(Inherit, whatever you want)](https://www.youtube.com/watch?v=3h8Nchqs95w#t=5s)
 
 Config used for `shimman-dev` projects.
 
