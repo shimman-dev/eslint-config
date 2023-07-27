@@ -20,8 +20,9 @@ module.exports = {
   },
   rules: {
     "arrow-body-style": "off",
+    "jsx-a11y/label-has-associated-control": ["error", { assert: "either" }],
     "react/function-component-definition": "off",
-    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
     "react/no-unescaped-entities": "off",
     "react/react-in-jsx-scope": "off",
