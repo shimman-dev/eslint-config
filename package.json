@@ -4,7 +4,7 @@
     "node": ">=16",
     "npm": ">=8"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "eslint config for shimman projects",
   "main": "index.js",
   "exports": {
